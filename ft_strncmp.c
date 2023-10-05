@@ -1,50 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 17:03:58 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/02 17:27:51 by mkadri           ###   ########.fr       */
+/*   Created: 2023/10/04 17:07:54 by mkadri            #+#    #+#             */
+/*   Updated: 2023/10/04 17:07:57 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include <stdio.h>
-#include <ctype.h>
 
-int	ft_isalpha(int c)
+int	ft_strncmp(const char *first, const char *second, size_t lenght)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	unsigned long	i;
+
+	i = 0;
+	while ((first[i] != '\0' || second[i] != '\0') && i < lenght)
 	{
-		return (1);
+		if (first[i] != second[i])
+		{
+			return (first[i] - second[i]);
+		}
+		i++;
 	}
 	return (0);
 }
-
-int	ft_isdigit(int c)
-{
-	if ((c >= 48 && c <= 57))
-	{
-		return (1);
-	}
-	return (0);
-}
-
-int	ft_isalnum(int c)
-{
-	if (ft_isalpha(c) || ft_isdigit(c))
-	{
-		return (1);
-	}
-	return (0);
-}
-
 /*
 int	main()
 {
-	printf("%d \n", ft_isalnum(65));
-	printf("%d \n", isalnum(65));
-	return(0);
+	char *first = "Hello";
+	char *second = "Hello";
+
+	printf("%d \n", ft_strncmp(first, second, 5));
+	printf("%d \n", strncmp(first, second, 5));
 }
 */
