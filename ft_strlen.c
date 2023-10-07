@@ -6,14 +6,13 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:52:40 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/02 12:34:53 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/07 14:50:18 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 

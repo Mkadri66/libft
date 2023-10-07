@@ -6,12 +6,11 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 13:41:45 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/02 14:48:06 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/07 14:09:53 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_tolower(int character)
 {

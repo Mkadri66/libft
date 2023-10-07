@@ -6,20 +6,19 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 16:44:28 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/04 16:44:32 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/07 14:09:38 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
-	if (c >= 0 && c <= 31)
+	if (c >= 32 && c <= 126)
 	{
-		return (0);
+		return (1);
 	}
-	return (1);
+	return (0);
 }
 /*
 int	main()
