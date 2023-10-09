@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:15:34 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/07 14:49:40 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/09 19:08:03 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,14 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
+# include <ctype.h>
+
 /* LIBC Functions */
 
 char		*ft_strchr(const char *str, int searched_char);
+char        *ft_strrchr(const char *str, int searched_char);
 size_t		ft_strlen(const char *str);
-
 int			ft_atoi(const char *str);
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
