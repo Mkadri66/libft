@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:15:34 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/11 17:51:31 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/11 20:23:09 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 
 /* LIBC Functions */
 
+void        *ft_memchr(const void *memory_block, int searched_char, size_t size);
 void		*ft_memset(void *array, int value, size_t count);
 char		*ft_strchr(const char *str, int searched_char);
 char        *ft_strrchr(const char *str, int searched_char);
