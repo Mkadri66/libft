@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:15:34 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/12 21:08:04 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/14 18:53:04 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void		*ft_memset(void *array, int value, size_t count);
 char		*ft_strchr(const char *str, int searched_char);
 char		*ft_strrchr(const char *str, int searched_char);
 size_t		ft_strlen(const char *str);
+size_t      ft_strlcpy(char *dest, const char *src, size_t size);
 int			ft_atoi(const char *str);
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
