@@ -15,35 +15,15 @@
 void	*ft_memchr(const void *memory_block, int searched_char, size_t size)
 {
 	size_t	i;
-	
-	i = 0;
 
-	while( i < size)
+	i = 0;
+	while (i < size)
 	{
-		if(((unsigned char*)memory_block)[i] == (unsigned char)searched_char)
+		if (((unsigned char *)memory_block)[i] == (unsigned char)searched_char)
 		{
-			return (void*)((char*)memory_block + i);
+			return ((void *)((char *)memory_block + i));
 		}
 		i++;
 	}
-	return(0);
+	return (0);
 }
-
-
-// int	main()
-// {
-// 	char array [] = "Salut";
-
-
-// 	int i = 0;
-	
-// 	ft_memchr(array, 'u', 5);
-// 	//memchr(array,5,6);
-
-// 	while(i < 13)
-// 	{
-// 		printf("%d \n", array[i]);
-// 		i++;
-// 	}	
-		
-// }

@@ -21,12 +21,12 @@
 
 /* LIBC Functions */
 
-void        *ft_memcpy(void *restrict dest, const void *restrict source, size_t n);
-void        ft_bzero(void *str, size_t str_size);
-void        *ft_memchr(const void *memory_block, int searched_char, size_t size);
+void		*ft_memcpy(void *restrict dest,const void *restrict source, size_t n);
+void		ft_bzero(void *str, size_t str_size);
+void		*ft_memchr(const void *memory_block, int searched_char, size_t size);
 void		*ft_memset(void *array, int value, size_t count);
 char		*ft_strchr(const char *str, int searched_char);
-char        *ft_strrchr(const char *str, int searched_char);
+char		*ft_strrchr(const char *str, int searched_char);
 size_t		ft_strlen(const char *str);
 int			ft_atoi(const char *str);
 int			ft_isalnum(int c);
