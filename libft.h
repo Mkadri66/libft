@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:15:34 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/17 17:30:03 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/18 21:41:16 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void		*ft_memchr(const void *memory_block, int searched_char, size_t size);
 void		*ft_memset(void *array, int value, size_t count);
 char		*ft_strchr(const char *str, int searched_char);
 char		*ft_strrchr(const char *str, int searched_char);
+char        *ft_strnstr(const char *big, const char *little, size_t len);
 size_t		ft_strlcat(char *dest, const char *src, size_t size);
 size_t		ft_strlen(const char *str);
 size_t      ft_strlcpy(char *dest, const char *src, size_t size);
