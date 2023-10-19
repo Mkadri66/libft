@@ -1,39 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 18:39:37 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/18 14:17:33 by mkadri           ###   ########.fr       */
+/*   Created: 2023/10/19 15:46:13 by mkadri            #+#    #+#             */
+/*   Updated: 2023/10/19 16:39:53 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	unsigned char		*ptr_dest;
-	const unsigned char	*ptr_src;
+	size_t	total_size;
+	void	*ptr;
 
-	ptr_dest = dest;
-	ptr_src = src;
-	if (dest == src)
-		return (dest);
-	if (ptr_dest < ptr_src)
-	{
-		while (n--)
-		{
-			*ptr_dest++ = *ptr_src++;
-		}
-	}
-	else
-	{
-		ptr_dest += n;
-		ptr_src += n;
-		while (n--)
-			*(--ptr_dest) = *(--ptr_src);
-	}
-	return (dest);
+	total_size = nmemb * size;
+	ptr = malloc(total_size);
+	if (ptr != NULL)
+		ft_memset(ptr, 0, total_size);
+	return (ptr);
 }
