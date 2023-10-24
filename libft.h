@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:15:34 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/24 20:06:56 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/24 20:37:38 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ int			ft_isdigit(int c);
 int			ft_isprint(int c);
 int			ft_tolower(int character);
 int			ft_toupper(int character);
+int         ft_memcmp(const void *str1, const void *str2, size_t n);
 int			ft_strncmp(const char *first, const char *second, size_t lenght);
 
 #endif
