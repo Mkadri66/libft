@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:15:34 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/23 16:14:45 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/24 19:39:47 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void		*ft_calloc(size_t nmemb, size_t size);
 void		ft_bzero(void *str, size_t str_size);
 void		*ft_memchr(const void *memory_block, int searched_char, size_t size);
 void		*ft_memset(void *array, int value, size_t count);
+void        ft_putstr_fd(char *s, int fd);
+void        ft_putchar_fd(char c, int fd);
 char		*ft_strchr(const char *str, int searched_char);
 char		*ft_strrchr(const char *str, int searched_char);
 char        *ft_substr(char const *s, unsigned int start, size_t len);
