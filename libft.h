@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:15:34 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/27 19:03:14 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/27 19:36:55 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void        ft_putchar_fd(char c, int fd);
 void        ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
+char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char		*ft_strchr(const char *str, int searched_char);
 char		*ft_strrchr(const char *str, int searched_char);
 char        *ft_substr(char const *s, unsigned int start, size_t len);
