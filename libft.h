@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:15:34 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/27 19:36:55 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/30 16:38:22 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,14 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <ctype.h>
+
+
+typedef struct s_list
+{
+	void *content;
+	struct s_list *next;
+} t_list;
+
 
 /* LIBC Functions */
 
@@ -55,4 +63,9 @@ int			ft_toupper(int character);
 int         ft_memcmp(const void *str1, const void *str2, size_t n);
 int			ft_strncmp(const char *first, const char *second, size_t lenght);
 
+
+/* BONUS Functions */
+
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 #endif
