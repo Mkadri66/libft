@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 20:05:15 by mkadri            #+#    #+#             */
-/*   Updated: 2023/10/24 20:33:35 by mkadri           ###   ########.fr       */
+/*   Updated: 2023/10/25 14:07:04 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (!s && fd < 0)
-		return ;
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
