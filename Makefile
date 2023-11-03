@@ -6,7 +6,7 @@
 #    By: mkadri <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/07 18:45:03 by mkadri            #+#    #+#              #
-#    Updated: 2023/11/02 11:01:20 by mkadri           ###   ########.fr        #
+#    Updated: 2023/11/02 17:14:00 by mkadri           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRCS			=	ft_isalnum.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_strchr.c ft_tolower
 					
 OBJS			= $(SRCS:.c=.o)
 
-BONUS			=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
+BONUS			=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c
 					
 BONUS_OBJS		= $(BONUS:.c=.o)
 
