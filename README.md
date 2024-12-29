@@ -88,7 +88,7 @@ To recompile everything:
    ```
 
 ## 👤 Author
-Mkadri66
+ [Mkadri66](https://github.com/Mkadri66)
 
 ## 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
